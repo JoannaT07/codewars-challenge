@@ -10,7 +10,7 @@ const disemvowel = (str) => {
 test.each([
   ["This website is for losers LOL!", "Ths wbst s fr lsrs LL!"],
   ["What are you, a communist?", "Wht r y,  cmmnst?"]
-])('Find %p of times that must multiply the digits in %p', (str, expected)=>{
+])("Should return a new string with all vowels removed [ str: %p expected: %p]", (str, expected)=>{
     //expect
     expect(disemvowel(str)).toEqual(expected)
 })

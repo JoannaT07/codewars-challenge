@@ -5,7 +5,7 @@ const reverseWords = (str) => {
 test.each([
   ["This is an example!", "sihT si na !elpmaxe"],
   ["Bobasek jest malutki", "kesaboB tsej iktulam"]
-])('Find %p of times that must multiply the digits in %p', (str, expected)=>{
+])("Should reverses each word in the string [ str: %p expected: %p]", (str, expected)=>{
     //expect
     expect(reverseWords(str)).toEqual(expected)
 })

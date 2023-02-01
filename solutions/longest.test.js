@@ -15,7 +15,7 @@ test.each([
     "abcdefghijklmnopqrstuvwxyz",
   ],
 ])(
-  "Find %p of times that must multiply the digits in %p",
+  "Should return the longest possible string, containing distinct letters [ s1: p%, s2: %p expected: %p]",
   (s1, s2, expected) => {
     //expect
     expect(longest(s1, s2)).toEqual(expected);

@@ -6,7 +6,7 @@ test.each([
   [[-1,2,3,4,-5], 9],
   [[-1,-2,-3,-4,-5], 0],
   [[], 0]
-])('Find %p of times that must multiply the digits in %p', (arr, expected)=>{
+])("Should return the sum of all positive array elements [ arr: %p sum: %p]", (arr, expected)=>{
     //expect
     expect(positiveSum(arr)).toEqual(expected)
 })
